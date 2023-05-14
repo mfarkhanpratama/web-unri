@@ -1,0 +1,240 @@
+:root{
+    /* color */
+    --primaryColor : #0C2747 ,
+    --secondaryColor : #FF8800,
+
+    /* font */
+    --mainFont : 'Poppins', sans-serif;
+}
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 910px;
+
+}
+
+.background_galery {
+    position: relative;
+    width: 100%;
+    height: 400px;
+
+}
+
+.latar-unri {
+    display: block;
+    width: 100%;
+    height: 100%;
+  object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-color{
+    background-color: #0C2747;
+    width: 100%;
+    height: 40px;
+}
+
+.mini { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #0C2747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;    
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.section_purpose , .section_academics{
+    padding: 85px 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title { 
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    text-align: center;
+    width: 50vw;
+}
+
+.paragraph { 
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #0C2747;
+  color: white;
+  font-size: 16px;
+  width: 400px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #154B79;
+  }
+
+.section_academics{
+    background-color: #f4f4f4;
+}
+
+.card-container{
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+
+}
+
+.title_academics { 
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-align: center;
+    width: 50vw;
+}
+
+footer{
+    height: 300px;
+    background-color: #0C2747;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer{
+    width: 170px;
+}
+
+.footer-text{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+
+.container_logo_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+
+}
+
+.container_footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1600px;
+}
+
+.title_footer ,.p-footer{
+    color: white;
+    font-size: 22px;
+    
+}
+
+.title_footer{
+    font-weight: 700;
+}
+
+.footer-text{
+    margin: 0 !important;
+}
+
+.footer_2{
+    margin-left: 60px;
+    
+}
+
+.c-item{
+    height: 600px;
+   width: 1200px;
+}
+
+.c-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.corousel_container {
+    max-width: 1200px; /* Atur lebar maksimum kontainer sesuai kebutuhan */
+    margin: 120px auto; /* Memusatkan kontainer secara horizontal */
+  }
+
+  .carousel {
+    width: 100%; /* Mengikuti lebar kontainer */
+  }
+
+  .carousel-item {
+    position: relative;
+  }
+
+  .carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ubah nilai alpha sesuai kebutuhan */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .carousel-item:hover .overlay {
+    opacity: 1;
+  }
+
+  .carousel-item .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .container { 
+    margin: 100px auto;
+  }

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .photo_container {
+        display: grid;
+        grid-template-columns: repeat(
+          4,
+          1fr
+        ); /* Mengatur 3 kolom dengan lebar yang sama */
+        grid-gap: 10px; /* Jarak antara gambar */
+        width: 1500px;
+        height: 800px;
+      }
+
+      .photo_container img {
+        width: 100%; /* Mengatur lebar gambar menjadi 100% */
+        height: 350px; /* Menjaga aspek rasio gambar */
+      }
+
+      .photo_container img.large {
+        grid-column: span 2; /* Mengatur gambar dengan kelas "large" untuk mengambil 2 kolom */
+      }
+
+      .container_photos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 120px auto;
+      }
+    </style>
+
+    <title>TEKNIK INFORMATIKA UNRI</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">TEKNIK INFORMATIKA UNRI</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Profil
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="berita.html">Info & News</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Academic
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Galery
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="photo.html">Photo</a></li>
+                  <li><a class="dropdown-item" href="video.html">Video</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Tour.html">Virtual Tour</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="kontak.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="background_galery">
+      <img src="asset/unri.jpg" alt="unri" class="latar-unri" />
+      <div class="overlay">
+        <h1
+          class=""
+          style="
+            margin-top: 250px;
+            margin-left: 50px;
+            font-size: 80px;
+            font-weight: bold;
+            color: white;
+          "
+        >
+          Kontak
+        </h1>
+      </div>
+    </div>
+
+    <div
+      style="
+        width: 1600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto;
+        flex-direction: column;
+      "
+    >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.721623604019!2d101.36313753955079!3d0.476395000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5aea1f427ab57%3A0x74d49c35acbd10e1!2sUniversitas%20Riau!5e0!3m2!1sid!2sid!4v1684079661071!5m2!1sid!2sid"
+        width="1600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div
+        style="
+          background-color: #f4f4f4;
+          width: 100%;
+          margin: 20px auto;
+          padding: 50px auto;
+        "
+      >
+        <p>
+          <span style="font-weight: 600">Alamat:</span>
+
+          Gedung C lantai 2 Fakultas Teknik Universitas Riau Kampus Binawidya
+          Jl. HR Soebrantas KM. 12.5, Simpang Baru, Binawidya Pekanbaru – 28293
+        </p>
+        <p>
+          <span style="font-weight: 600">Email:</span>
+          informatika@eng.unri.ac.id
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container_footer">
+        <div class="container_logo_footer">
+          <img
+            src="asset/LOGO-UR-TERBARU.png"
+            alt="logo unri"
+            class="logo-footer"
+          />
+          <p class="footer-text">TEKNIK</p>
+          <p class="footer-text footer-text-2">INFORMATIKA</p>
+        </div>
+        <div>
+          <div class="footer_2">
+            <p class="title_footer">ALAMAT</p>
+            <p class="p-footer">
+              Gedung C lantai 2 Fakultas Teknik Universitas RiauKampus
+              BinawidyaJl. HR Soebrantas KM. 12.5,Simpang Baru, Binawidya,
+              Pekanbaru – 28293
+            </p>
+          </div>
+          <div class="footer_2">
+            <p class="title_footer">KONTAK</p>
+            <p class="p-footer">E-mail: informatika@eng.unri.ac.id</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
