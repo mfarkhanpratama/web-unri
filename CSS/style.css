@@ -109,6 +109,18 @@ html{
   transition: background-color 0.3s ease;
   }
 
+  .img-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .container-prestasi{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+  }
+
   .button:hover {
     background-color: #154B79;
   }
@@ -122,6 +134,11 @@ html{
     gap: 30px;
     margin: 40px 0;
 
+}
+
+.none{
+    list-style: none;
+    
 }
 
 .title_academics { 
@@ -201,7 +218,7 @@ footer{
     margin: 120px auto; /* Memusatkan kontainer secara horizontal */
   }
 
-  .carousel {
+.carousel {
     width: 100%; /* Mengikuti lebar kontainer */
   }
 
@@ -238,3 +255,23 @@ footer{
   .container { 
     margin: 100px auto;
   }
+
+.container_Dosen{
+    width: 1700px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.sejarah{
+    padding: 20px 40px;
+}
+
+
+
+
+
+
+
